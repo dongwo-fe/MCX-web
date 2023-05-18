@@ -1,0 +1,243 @@
+.dynamic_form_editor {
+  .card_title {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 24px;
+  }
+  .item_wrap {
+    padding: 0;
+
+    :global(.ant-radio-wrapper) {
+      line-height: 32px;
+      width: 100px;
+    }
+  }
+
+  .form_row {
+    display: flex;
+    padding: 0 14px;
+    margin-top: 16px;
+    line-height: 32px;
+    .title_label {
+      width: 90px;
+      text-align: right;
+      color: #838E9D;
+    }
+  }
+
+  .custom_color {
+    .color_radio {
+      :global(.ant-radio) {
+        border: solid 2px #fff;
+        padding: 1px;
+        border-radius: 50%;
+      }
+
+      :global(.ant-radio-inner) {
+        background-color: var(--radio-color);
+        height: 12px;
+        width: 12px;
+        border: none;
+        &::after {
+          background-color: var(--radio-color);
+        }
+      }
+
+      :global(.ant-radio-checked) {
+        border: solid 2px #1A90FF;
+      }
+    }
+  }
+
+  .customer_btn {
+    width: 82px;
+    height: 32px;
+    background: #FFF;
+    border-radius: 6px;
+    border: 1px solid #DADFE6;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 8px;
+    &.active {
+      border-color: #1863FF;
+      color: #1863FF;
+    }
+  }
+
+  .dynamic_form_editor_tabs {
+    background-color: #F7F8FA;
+    height: 40px;
+    padding: 4px;
+    border-radius: 6px;
+    width: 370px;
+    margin-top: 10px;
+
+    .tab_bar {
+      display: none;
+    }
+
+    .dynamic_form_editor_tab {
+      display: inline-block;
+      position: relative;
+      color: #838E9D;
+      font-size: 16px;
+      text-align: center;
+      line-height: 32px;
+      width: 180px;
+      cursor: pointer;
+      &.active {
+        color: #202D40;
+        background-color: #E2EDFF;
+        border-radius: 4px;
+
+        .tab_bar {
+          position: absolute;
+          background-color: #1B66FF;
+          height: 4px;
+          border-radius: 4px;
+          width: 24px;
+          display: inline-block;
+          left: 78px;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .form_content {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    .customer_btn {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.form_edit_item {
+  background: #F7F8FA;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  z-index: 99;
+
+  .form_edit_item_wrap {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+  }
+
+  .item_title {
+    color: #333;
+    font-size: 14px;
+    flex: 1;
+    margin-left: 8px;
+  }
+
+  .switch {
+    padding: 2px;
+    background: #E5E9EC;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  .switch_item {
+    width: 60px;
+    height: 20px;
+    color: #666F80;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    &.active {
+      color: #202D40;
+      background-color: #A0C4FF;
+      border-radius: 4px;
+    }
+  }
+
+  .item_del {
+    background-image: url(https://ossprod.jrdaimao.com/file/1681472799813539.png);
+    height: 16px;
+    width: 16px;
+    background-size: cover;
+    margin-left: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+}
+
+.select_item {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  z-index: 10;
+
+  .box {
+    width: 100%;
+      height: 32px;
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid #dadfe6;
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      .box_left {
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // width: 74px;
+          height: 32px;
+          padding: 0 6px;
+          border-right: 1px solid #dadfe6;
+          &:hover {
+              cursor: row-resize;
+          }
+          color: #838e9d;
+          font-size: 14px;
+      }
+      .input {
+          color: #333333;
+          font-size: 14px;
+      }
+  }
+  .sortable {
+      width: 16px;
+      height: 16px;
+  }
+  .close {
+      width: 16px;
+      height: 16px;
+      &:hover {
+          cursor: pointer;
+      }
+  }
+}
+
+.input_wrap {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  .input {
+    border-radius: 6px;
+    margin: 16px;
+    width: 416px;
+  }
+}
+
+.item_drag {
+  background-image: url(https://ossprod.jrdaimao.com/file/1681472842665909.png);
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.select_options {
+  padding: 0 16px;
+  padding-bottom: 16px;
+  .add_btn {
+    height: 22px;
+    line-height: 22px;
+  }
+}

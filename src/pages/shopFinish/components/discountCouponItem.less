@@ -1,0 +1,67 @@
+.discount-coupon-wrap {
+  width: 134px;
+  height: 75px;
+  background: url('https://ossprod.jrdaimao.com/file/1679307002246125.png'), no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+
+
+  &-name {
+    width: 85px;
+    height: 16px;
+    background: linear-gradient(135deg, #D39342 0%, #B97522 100%);
+    border-radius: 6px 2px 6px 0px;
+    overflow: hidden; //超出的文本隐藏
+    text-overflow: ellipsis; //溢出用省略号显示
+    white-space: nowrap; 
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFF2D8;
+    line-height: 16px;
+    padding: 0 6px;
+    margin-bottom: 10px;
+  }
+
+  &-condition {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+
+
+    :nth-child(1) {
+      font-size: 12px;
+      font-weight: 400;
+      color: #8C4600;
+      margin-bottom: 5px;
+
+      span {
+        font-size: 20px;
+        font-weight: 500;
+        color: #8C4600;
+      }
+    }
+
+    :nth-child(2) {
+      font-size: 12px;
+      font-weight: 400;
+      color: #8C4600;
+    }
+  }
+
+  &-get {
+    position: absolute;
+    top: 19px;
+    right: 12px;
+    
+
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #8C4600;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+$design-width: 750; //设计稿宽
+$render-width-count: 375; //中间渲染的宽
+$render-width: $render-width-count + px; //中间渲染的宽
+
+@function px($px) {
+    @return ($px * calc($render-width-count/$design-width)) + px;
+}

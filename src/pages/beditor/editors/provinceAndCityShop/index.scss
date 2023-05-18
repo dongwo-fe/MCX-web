@@ -1,0 +1,75 @@
+@import '../../common.scss';
+
+.render-province-and-city-shop {
+  padding: px(24) px(34);
+  border-radius: px(16);
+  margin: px(20) px(30);
+  .module-title {
+    font-size: px(32);
+    margin-bottom: px(24);
+    font-weight: bold;
+  }
+
+  .form-item {
+    border-radius: px(44);
+    height: px(88);
+    background: #d8d8d833;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 px(30);
+    position: relative;
+    margin-bottom: px(20);
+    border: solid px(2) #D9D9D9;
+
+    .arrow {
+      img {
+        width: px(24);
+        height: px(24);
+      }
+    }
+
+    > span:nth-child(1) {
+      color: #999999;
+      margin-right: px(15);
+      font-weight: 400;
+      font-size: px(28);
+    }
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: 100%;
+      font-size: px(30);
+      border-radius: px(44);
+      height: px(88);
+      border: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+}
+
+.light-card {
+  background: #ffffff;
+  .module-title{
+    color: #333333;
+  }
+  .form-item {
+    background: #ffffff;
+  }
+}
+
+.dark-card {
+  .module-title{
+    color: #ffffff;
+  }
+  background: rgba(255, 255, 255, .2);
+
+  .form-item {
+    background: rgba(255, 255, 255, .8);
+  }
+}

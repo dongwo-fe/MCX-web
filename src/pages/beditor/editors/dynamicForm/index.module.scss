@@ -1,0 +1,68 @@
+@import '../../common.scss';
+
+.form_center {
+  margin: 0 px(16);
+  border-radius: px(16);
+  background-color: #fff;
+  padding: px(24) px(16);
+
+  .form_item {
+    height: px(88);
+    color: #838E9D;
+    border: 1px solid #DADFE6;
+    border-radius: px(88);
+    line-height: px(88);
+    padding-left: px(58);
+    font-size: px(32);
+    margin-bottom: px(24);
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .required {
+    &::before {
+        content: '*';
+        color: #F05233;
+        position: absolute;
+        left: px(32);
+    }
+  }
+
+  &.dark {
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    .form_item {
+      border-color: transparent;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+    }
+  }
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: px(24);
+
+  .button {
+    width: 100%;
+    font-size: px(32);
+    border-radius: px(44);
+    height: px(88);
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: px(24);
+  height: px(24);
+  right: px(48);
+  top: px(32);
+//   border-right: 100px solid #0f0;
+//   border-bottom: 100px solid #00f;
+//   border-left: 100px solid #ff0;
+}

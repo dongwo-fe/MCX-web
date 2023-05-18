@@ -1,0 +1,25 @@
+.card_title {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.form_row {
+  display: flex;
+  padding: 0 14px;
+  margin-top: 16px;
+  align-items: center;
+  .title_label {
+    width: 90px;
+    text-align: right;
+    color: #838E9D;
+  }
+
+  .item_wrap {
+    width: 284px;
+    :global(.ant-radio-wrapper) {
+      width: 100px;
+    }
+  }
+}

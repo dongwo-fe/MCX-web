@@ -1,0 +1,248 @@
+body {
+    height: 100%;
+}
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+img {
+    object-fit: cover;
+}
+@import '~antd/dist/antd.css';
+
+//=====使用的tailwind的残留
+.flex {
+    display: flex;
+}
+.items-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.w-80 {
+    width: 20rem;
+}
+.text-right {
+    text-align: right;
+}
+.p-1 {
+    padding: 0.25rem;
+}
+.border-black {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.border-2 {
+    border-width: 2px;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+.top-0 {
+    top: 0px;
+}
+.left-0 {
+    left: 0px;
+}
+.right-0 {
+    right: 0px;
+}
+.grid {
+    display: grid;
+}
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.gap-4 {
+    gap: 1rem;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.w-100 {
+    width: 28rem;
+}
+.float-right {
+    float: right;
+}
+//====================
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

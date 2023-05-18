@@ -1,0 +1,65 @@
+@import '../../common.scss';
+.editor-module-wrap {
+    .item-weChat-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .item-part {
+        width: 100%;
+        border: solid 1 #ccc;
+    }
+}
+
+// 渲染端UI
+.render-bean-box {
+    padding: px(20);
+    height: px(243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bg_box {
+        width: 100%;
+        height: px(203);
+        border-radius: px(10);
+        padding-left: px(45);
+        padding-right: px(50);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .weCat-iamge-box {
+        width: px(90);
+        height: px(90);
+        border-radius: px(20);
+        object-fit: fill;
+    }
+
+    .code-iamge-box {
+        width: px(127);
+        height: px(120);
+        object-fit: fill;
+        border-radius: px(8);
+    }
+
+    .we-title-box {
+        padding: px(2) 0;
+        margin-left: px(20);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .txt1 {
+            font-size: px(30);
+        }
+        .txt2 {
+            font-size: px(24);
+        }
+    }
+}

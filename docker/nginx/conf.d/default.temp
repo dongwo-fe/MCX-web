@@ -1,0 +1,77 @@
+server {
+      #error_page  404              /404.html;
+      error_page   500 502 503 504  /50x.html;
+      location = /50x.html {
+          root   html;
+      }
+      listen 8082;
+      # server_name xxx.com;
+      location / {
+          charset utf-8;
+          root   /home/www/{{outPath}};
+          index  index.html index.htm index.shtml;
+          try_files $uri /index.html;
+      }
+      location = /actuator/health {
+          return 200 "ok";
+      }
+       location /api_config {
+        proxy_pass {{ip}};
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        
+        add_header X-Cache $upstream_cache_status;
+    
+    	add_header Cache-Control no-cache;
+      }
+       location /api_topic {
+        proxy_pass {{topic}};
+        ## proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        
+        add_header X-Cache $upstream_cache_status;
+    
+    	add_header Cache-Control no-cache;
+      }
+       location /bigdata {
+        proxy_pass {{bigdata}};
+        ## proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        
+        add_header X-Cache $upstream_cache_status;
+    
+    	add_header Cache-Control no-cache;
+      }
+
+      location /api_link {
+        proxy_pass {{topic}};
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        add_header X-Cache $upstream_cache_status;
+    	  add_header Cache-Control no-cache;
+      }
+
+      location /GPT2 {
+        proxy_pass {{topic}};
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        add_header X-Cache $upstream_cache_status;
+    	  add_header Cache-Control no-cache;
+      }
+      location /ChatGLM6B {
+        proxy_pass {{topic}};
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        add_header X-Cache $upstream_cache_status;
+    	  add_header Cache-Control no-cache;
+      }
+}

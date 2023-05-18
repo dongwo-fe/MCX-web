@@ -1,0 +1,76 @@
+@import '../../common.scss';
+
+.editor-module-wrap {
+    padding: 0 20px;
+    min-height: 800px;
+
+    .item-sp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .item-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-right-ds {
+        margin-right: 10px;
+    }
+
+    .set-default {
+        padding: 6px 4px;
+        border: solid 1px #ccc;
+    }
+
+    .image-box {
+        width: 44px;
+        height: 44px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #ccc;
+    }
+
+    .item-top-ds {
+        margin-top: 40px;
+    }
+
+    .item-bottom-ds {
+        margin-bottom: 20px;
+    }
+}
+// 渲染端UI
+.render-notice-box {
+    height: px(96);
+    padding: 0 px(30);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .notice-box {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        align-items: center;
+        border-radius: px(8);
+        height: px(56);
+        padding: 0 px(30);
+        white-space: nowrap;
+
+        .context-text {
+            max-width: px(586);
+            overflow: hidden;
+        }
+    }
+
+    .image-show {
+        width: px(24);
+        height: px(24);
+        object-fit: fill;
+        margin-right: px(14);
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,26 @@
+.active-landing {
+    .handle {
+        span {
+            color: #1677ff;
+            font-size: 14px;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+    .btn-right {
+        padding-right: 30px;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+    .ant-input {
+        border-radius: 6px !important;
+    }
+    .ant-btn {
+        border-radius: 6px !important;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border-radius: 6px !important;
+    }
+}

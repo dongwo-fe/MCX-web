@@ -1,0 +1,125 @@
+.cap-richtext {
+    position: relative;
+    box-sizing: border-box;
+    // overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    overflow-x: hidden;
+    max-height: 60vh;
+    .w-e-image-container {
+        margin: 0 !important;
+    }
+}
+
+.cap-richtext p,
+.cap-richtext ol li {
+    white-space: pre-wrap; /* 保留空格 */
+    list-style-type: decimal;
+}
+.cap-richtext ul ol {
+    list-style-type: decimal;
+}
+.cap-richtext ul {
+    list-style-type: disc;
+}
+
+.cap-richtext strong {
+    font-weight: bold;
+}
+.cap-richtext em {
+    font-style: italic;
+}
+
+.cap-richtext blockquote {
+    border-left: 8px solid #d0e5f2;
+    padding: 10px 10px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+}
+
+.cap-richtext code {
+    font-family: monospace;
+    background-color: #eee;
+    padding: 3px;
+    border-radius: 3px;
+}
+.cap-richtext pre > code {
+    display: block;
+    padding: 10px;
+}
+
+.cap-richtext table {
+    border-collapse: collapse;
+}
+.cap-richtext td,
+.cap-richtext th {
+    border: 1px solid #ccc;
+    min-width: 50px;
+    height: 20px;
+}
+.cap-richtext th {
+    background-color: #f1f1f1;
+}
+
+.cap-richtext ul,
+.cap-richtext ol {
+    padding-left: 20px;
+}
+
+.cap-richtext input[type='checkbox'] {
+    margin-right: 5px;
+}
+
+.cap-richtext video {
+    width: 100%;
+}
+#rich-text {
+    margin-top: 14px;
+    overflow-y: scroll;
+    height: 80vh;
+    &::-webkit-scrollbar {
+        display: none;
+        background-color: transparent;
+    }
+
+    .w-e-text-container {
+        height: 100%;
+    }
+    .msg {
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #969799;
+        margin-left: 24px;
+    }
+    .control-group {
+        padding: 12px 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .control-group__title {
+            color: #969799;
+            margin-right: 16px;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+        .ant-checkbox-wrapper {
+            margin-left: auto;
+        }
+    }
+
+    .tips {
+        text-align: right;
+        padding: 5px 10px;
+    }
+    video {
+        width: 100%;
+    }
+}

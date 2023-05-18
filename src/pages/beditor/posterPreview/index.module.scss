@@ -1,0 +1,108 @@
+.posterPreview {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.preview {
+  position: absolute;
+  right: 462px;
+  height: 477px;
+  width: 331px;
+  bottom: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
+
+  .img {
+    width: 310px;
+    height: 310px;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .title {
+    color: #333;
+    font-size: 16px;
+    line-height: 22px;
+    max-height: 44px;
+    overflow: hidden;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-top: 16px;
+  }
+
+  .des {
+    color: #999;
+    font-size: 12px;
+    overflow: hidden;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 32px;
+    line-height: 16px;
+    margin-top: 5px;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 13px;
+  .user_logo {
+    background-image: url(https://ossprod.jrdaimao.com/file/1681883709348226.png);
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+  }
+  
+  .info {
+    padding-left: 8px;
+    .phone {
+      color: #333;
+      font-size: 14px;
+    }
+    
+    .coments {
+      font-size: 12px;
+      color: #999;
+      margin-top: 5px;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  // margin-top: 16px;
+}
+
+.qrCode {
+  width: 72px;
+  height: 72px;
+  background-image: url(https://ossprod.jrdaimao.com/file/1681909222503602.png);
+  background-size: cover;
+}
+
+.code {
+  margin-left: 15px;
+  margin-top: 55px;
+}
+
+.text {
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+}
+
+.user_info {
+  width: 217px;
+}

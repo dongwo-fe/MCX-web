@@ -1,0 +1,137 @@
+#dw-preview-modal {
+    display: flex;
+    text-align: justify;
+    .tcards {
+        margin: 40px 0 0 40px;
+        .item {
+            /* 小按钮 1 */
+
+            width: 112px;
+            height: 42px;
+            border-radius: 8px 0px 0px 8px;
+
+            /* 自动布局 */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+            /* 纯白 */
+            background: #ffffff;
+
+            box-sizing: border-box;
+            /* 中性灰/90 辅助线等 */
+            border: 1px solid #e6e6e6;
+            transition: all 0.2s;
+
+            color: #999999;
+            font-size: 14px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .item-act {
+            background: #1890ff;
+            box-shadow: -8px 4px 12px 4px rgba(24, 144, 255, 0.3);
+            border: 1px solid #1890ff;
+
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+
+    .iframe-box {
+        width: 375px;
+        height: 667px;
+        border: medium none;
+        margin: 0 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: 0px 8px 32px 8px rgba(0, 0, 0, 0.05);
+        flex-shrink: 0;
+        overflow: overlay;
+    }
+
+    .right-box {
+        margin-left: 60px;
+        .title {
+            font-size: 16px;
+            line-height: 25px;
+            color: #595959;
+        }
+        .share-info {
+            margin-top: 20px;
+            display: flex;
+            img {
+                width: 140px;
+                height: 140px;
+                margin-right: 20px;
+                object-fit: cover;
+            }
+            span {
+                width: 188px;
+                font-size: 12px;
+                text-align: justify; /* 浏览器可能不支持 */
+
+                /* 中性灰/35 小标题 */
+                color: #595959;
+            }
+        }
+        .url {
+            width: 348px;
+            font-size: 12px;
+            line-height: 20px;
+            color: #595959;
+            margin-top: 20px;
+            word-break: break-all;
+        }
+        .copy-btn {
+            width: 112px;
+            height: 42px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e6e6e6;
+            margin-left: auto;
+            margin-top: 10px;
+            user-select: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .line {
+            background: #f8f8fc;
+            margin-top: 40px;
+            width: 347px;
+            height: 1px;
+        }
+        .qrcode-box {
+            display: flex;
+            img {
+                width: 140px;
+                height: 140px;
+                margin-right: 20px;
+            }
+            .desc-txt {
+                color: #595959;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: justify;
+                width: 188px;
+            }
+        }
+    }
+    .create-channel{
+        display: flex;
+        margin-top: 20px;
+        span:nth-child(1){
+            color: #888888;
+        }
+        span:nth-child(2){
+            color: #1890ff;
+            cursor: pointer;
+        }
+    }
+}

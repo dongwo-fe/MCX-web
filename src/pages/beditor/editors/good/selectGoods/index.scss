@@ -1,0 +1,62 @@
+.active-landing-two {
+    position: relative;
+    .ant-input {
+        border-radius: 6px;
+    }
+    .ant-btn {
+        border-radius: 6px !important;
+    }
+    .common-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .active-header-box {
+        height: 48px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12px;
+        border-bottom: 1px solid #e8e8e8;
+        font-size: 16px;
+        font-weight: 500;
+        color: #202d40;
+
+        .line-part {
+            width: 1px;
+            height: 32px;
+            border: 1px solid #eaecf0;
+            margin-right: 20px;
+        }
+
+        .close-icon {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .fliter-box {
+        margin-top: 18px;
+        width: 100%;
+    }
+    .table-wrap {
+        width: 100%;
+        padding: 0 12px;
+    }
+    .handle {
+        span {
+            color: #1677ff;
+            font-size: 14px;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+    .btn-right {
+        padding-right: 30px;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+}

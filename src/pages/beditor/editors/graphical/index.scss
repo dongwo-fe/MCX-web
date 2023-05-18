@@ -1,0 +1,122 @@
+@import '../../common.scss';
+.new-contain-box {
+    padding: 10px 16px;
+    min-height: 700px;
+
+    .item-box-sp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .item-border {
+        border-radius: 2px;
+        border: solid 1px #eee;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .item-col-sp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .add-title {
+        color: rgb(66, 139, 228);
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+
+        .show-input-text {
+            color: #1890ff;
+            max-width: 180px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .add-nav-box {
+        margin-top: 24px;
+        border-radius: 8px;
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .diff-height {
+        height: 40px;
+    }
+
+    .dis-margin {
+        margin-top: 24px;
+    }
+
+    .show-detail-input {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: solid 1px #777777;
+    }
+}
+
+// 渲染端UI
+.render-image-text-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+
+    .empty-font-style {
+        color: '#777777';
+        font-size: 14px;
+        width: px(150);
+        text-align: center;
+    }
+
+    .empty-title-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .image-box-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .image-box-empty {
+                object-fit: cover;
+            }
+        }
+    }
+
+    .item-contain-bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+
+        .image-box {
+            object-fit: cover;
+        }
+    }
+
+    .item-contain-title {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+    }
+}

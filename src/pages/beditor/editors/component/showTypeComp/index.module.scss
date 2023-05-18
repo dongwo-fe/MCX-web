@@ -1,0 +1,21 @@
+.component_row_wrap {
+  padding: 0 20px;
+  .title_base {
+    padding-left: 16px;
+    margin-top: 24px;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .component_row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 16px;
+      .component_row_title {
+          word-break: keep-all;
+          margin-right: 20px;
+          color: #838E9D;
+      }
+  }
+}

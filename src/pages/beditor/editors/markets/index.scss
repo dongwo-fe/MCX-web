@@ -1,0 +1,331 @@
+@import '../../common.scss';
+
+#market-editor {
+    .control-group {
+        padding: 12px 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .control-group__title {
+            color: #969799;
+            margin-right: 16px;
+        }
+        .ml-auto {
+            margin-left: auto;
+        }
+        .ant-checkbox-wrapper {
+            margin-left: auto;
+        }
+    }
+}
+.row-dragging {
+    background: #fafafa;
+    border: 1px solid #ccc;
+    z-index: 10;
+    td {
+        padding: 16px;
+    }
+    .drag-visible {
+        visibility: visible;
+    }
+}
+
+.city-box {
+    overflow: scroll;
+    height: 90%;
+    margin-top: 20px;
+}
+.editor-module-wrap {
+    .detail-title {
+        color: #999;
+        margin-top: 20px;
+    }
+
+    .margin-top-dis {
+        margin-top: 16px;
+    }
+
+    .margin-left-dis {
+        margin-left: 20px;
+    }
+
+    .item-sp-market {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.render-market-box-three {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: px(30);
+    // padding-right: px(30);
+    // justify-content: space-between;
+    :nth-child(n + 4) {
+        margin-top: px(20);
+    }
+    > :not(:nth-child(3n)) {
+        margin-right: px(27);
+    }
+    .render-shop-box {
+        .shop-image {
+            width: px(212);
+            height: px(214);
+            border-radius: px(18);
+        }
+        .shop-name {
+            font-size: px(28);
+            font-weight: 500;
+            color: #303235;
+            line-height: px(33);
+            width: px(212);
+            white-space: nowrap;
+            margin-top: px(16);
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+.render-market-box-four {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: px(30);
+    // padding-right: px(30);
+    // justify-content: space-between;
+    >:nth-child(n + 5) {
+        margin-top: px(20);
+    }
+    > :not(:nth-child(4n)) {
+        margin-right: px(17);
+    }
+    .render-shop-box {
+        .shop-image {
+            width: px(160);
+            height: px(160);
+            border-radius: px(18);
+        }
+        .shop-name {
+            font-size: px(22);
+            font-weight: 500;
+            color: #303235;
+            line-height: px(22);
+            width: px(160);
+            white-space: nowrap;
+            margin-top: px(10);
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+.render-market-box-two {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >:nth-child(n + 3) {
+        margin-top: px(20);
+    }
+    .render-markets-box {
+        height: px(276);
+        width: px(375);
+        position: relative;
+
+        .market-image-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .markets-message-box {
+            width: 100%;
+            height: px(95);
+            padding: 0 px(10);
+            position: absolute;
+            left: 0;
+            bottom: px(10);
+
+            .markets-message-contain {
+                width: 100%;
+                height: 100%;
+                padding: px(16);
+                border-radius: px(9);
+                background-color: white;
+            }
+
+            .markets-name {
+                color: #2A2C2F;
+                font-size: px(22);
+                font-weight: 600;
+                margin-bottom: px(8);
+            }
+
+            .markets-address {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: px(30);
+                font-size: px(18);
+                color: #333333;
+                font-weight: 500;
+
+                .address-image {
+                    width: px(13);
+                    height: px(19);
+                    object-fit: fill;
+                    margin-right: px(8);
+                }
+
+                .address-detail {
+                    max-width: px(270);
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    word-break: break-all;
+                }
+
+                .div-part {
+                    background-color: #e3e4e5;
+                    width: px(1);
+                    height: px(22);
+                    margin-left: px(8);
+                }
+
+                .phone-image {
+                    width: px(15);
+                    height: px(15);
+                    object-fit: fill;
+                    margin-left: px(12);
+                }
+            }
+
+            .markets-work-time {
+                margin-top: px(8);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: #666666;
+                font-size: px(10);
+
+                .time-image {
+                    width: px(12);
+                    height: px(12);
+                    object-fit: fill;
+                }
+
+                .work-time-detail {
+                    margin-left: px(4);
+                    max-width: px(300);
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+}
+.render-market-box-one {
+    :nth-child(n + 2) {
+        margin-top: px(20);
+    }
+}
+// 渲染端UI
+.render-markets-box {
+    height: px(564);
+    position: relative;
+
+    .market-image-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .markets-message-box {
+        width: 100%;
+        height: px(190);
+        padding: 0 px(20);
+        position: absolute;
+        left: 0;
+        bottom: px(25);
+
+        .markets-message-contain {
+            width: 100%;
+            height: 100%;
+            padding: px(24);
+            border-radius: px(30);
+            background-color: white;
+        }
+
+        .markets-name {
+            color: #2a2c2f;
+            font-size: px(34);
+            margin-bottom: px(25);
+            font-weight: 600;
+        }
+
+        .markets-address {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: px(26);
+            font-size: px(24);
+            color: #333333;
+            font-weight: 500;
+
+            .address-image {
+                width: px(18);
+                height: px(26);
+                object-fit: fill;
+                margin-right: px(10);
+            }
+
+            .address-detail {
+                max-width: px(400);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                word-break: break-all;
+            }
+
+            .div-part {
+                background-color: #e3e4e5;
+                width: px(1);
+                height: px(26);
+                margin-left: px(50);
+            }
+
+            .phone-image {
+                width: px(26);
+                height: px(26);
+                object-fit: fill;
+                margin-left: px(25);
+            }
+        }
+
+        .markets-work-time {
+            margin-top: px(20);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #666666;
+            font-size: px(24);
+
+            .time-image {
+                width: px(22);
+                height: px(22);
+                object-fit: fill;
+            }
+
+            .work-time-detail {
+                margin-left: px(10);
+                max-width: px(600);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                word-break: break-all;
+            }
+        }
+    }
+}

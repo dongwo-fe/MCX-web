@@ -1,0 +1,339 @@
+@import '../../common.scss';
+
+.editor-module-wrap {
+    .common-box {
+        width: 50px;
+        height: 30px;
+        border: solid 1px #ddd;
+        padding: 7px 10px;
+    }
+
+    .one-bg {
+        width: 28px;
+        height: 16px;
+    }
+
+    .two-bg {
+        width: 10px;
+        height: 16px;
+    }
+
+    .three-bg {
+        width: 6px;
+        height: 16px;
+    }
+
+    .four-bg {
+        width: 5px;
+        height: 16px;
+    }
+
+    .five-bg {
+        width: 10px;
+        height: 5px;
+    }
+
+    .six-bg {
+        width: 9px;
+        height: 7px;
+    }
+
+    .diff-six-bg {
+        width: 12px;
+        height: 7px;
+    }
+
+    .senve-bg {
+        width: 28px;
+        height: 8px;
+        margin-bottom: 3px;
+    }
+
+    .eight-bg {
+        width: 4px;
+        height: 6px;
+        margin-left: 1px;
+    }
+
+    .common-center {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .common-sa {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .common-sp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .common-warp {
+        flex-wrap: wrap;
+    }
+
+    .common-col {
+        display: flex;
+        height: 16px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .common-row {
+        display: flex;
+        width: 28px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .common-bg {
+        background-color: #666;
+    }
+
+    .select-bg {
+        background-color: rgba(113, 202, 243, 0.4);
+        border: solid 1px #1890ff;
+    }
+
+    .select-box {
+        background-color: rgb(24, 144, 255);
+    }
+
+    .link-bg {
+        width: 140px;
+        border: solid 1px #eee;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #bbb;
+        padding: 2px;
+    }
+
+    .link-three-bg {
+        width: 93px;
+        border: solid 1px #eee;
+        height: 93px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #bbb;
+        padding: 2px;
+    }
+
+    .link-four-bg {
+        width: 72px;
+        border: solid 1px #eee;
+        height: 72px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #bbb;
+        font-size: 12px;
+    }
+
+    .title-font {
+        font-size: 14px;
+    }
+
+    .linke-five-bg {
+        width: 140px;
+        height: 280px;
+        color: #bbb;
+        border: solid 1px #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linke-six-bg {
+        width: 280px;
+        height: 140px;
+        color: #bbb;
+        border: solid 1px #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link-senve-bg {
+        width: 70px;
+        height: 140px;
+        color: #bbb;
+        border: solid 1px #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .select-link-bg {
+        border: solid 1px rgb(24, 144, 255);
+        background-color: #bcd8ff;
+        color: #1890ff;
+    }
+
+    .image-upload {
+        width: 100%;
+        height: 120px;
+        border: solid 1px #eee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .one-image-box {
+        height: 200px;
+        width: 100%;
+        background-color: #bcd8ff;
+        border: solid 1px rgb(24, 144, 255);
+        color: #1890ff;
+    }
+
+    .one-image-show {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .two-image-show {
+        width: 138px;
+        height: 138px;
+        object-fit: cover;
+    }
+
+    .three-image-show {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+    }
+
+    .four-image-show {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    .five-image-show {
+        width: 138px;
+        height: 138px;
+        object-fit: cover;
+    }
+
+    .six-image-show {
+        width: 138px;
+        height: 278px;
+        object-fit: cover;
+    }
+
+    .senve-image-show {
+        width: 278px;
+        height: 138px;
+        object-fit: cover;
+    }
+
+    .eight-image-show {
+        width: 68px;
+        height: 138px;
+        object-fit: cover;
+    }
+
+    .show-detail-input {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: solid 1px #777777;
+    }
+
+    .show-input-text {
+        color: #1890ff;
+        max-width: 140px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+// 渲染端UI
+.pazzle-render-box {
+    .empty-box {
+        height: px(500);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .empty-image {
+        width: px(250);
+        height: px(214);
+        object-fit: contain;
+        margin-bottom: px(40);
+    }
+
+    .empty-title {
+        font-size: px(28);
+        color: #777777;
+    }
+
+    .show-image-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .one-image-contain {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .two-images-contain {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .three-image-contain {
+        object-fit: cover;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .four-image-contain {
+        object-fit: cover;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .dis-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .dis-col {
+        display: flex;
+        flex-direction: column;
+    }
+}

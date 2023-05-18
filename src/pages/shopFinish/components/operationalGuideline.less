@@ -1,0 +1,93 @@
+.operational-guideline {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .change-shop {
+    background: '#fff';
+    border-radius: 8;
+
+    &-content {
+      width: 324px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+      padding-bottom: 20px;
+      border-radius: 6px;
+      
+
+      .triangle {
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        transform: rotate(45deg);
+        border-radius: 3px;
+      }
+
+      .title {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(0,0,0,0.88);
+
+        :nth-child(1) {
+
+          .first {
+            font-size: 16px;
+          }
+        }
+
+        :nth-child(2) {
+          margin-left: 11px;
+        }
+      }
+
+      .desc {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0,0,0,0.88);
+        margin-top: 8px;
+        line-height: 22px;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: space-between;
+
+        .break {
+          font-size: 12px;
+          font-weight: 400;
+          color: #999999;
+          cursor: pointer;
+        }
+
+        .ant-btn-ghost, .ant-btn-primary {
+          width: 58px;
+          height: 24px;
+          border-radius: 2px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .ant-btn-ghost {
+          border: 1px solid #1890FF;
+          color: #1890FF;
+        }
+
+        .ant-btn-primary {
+          color: #fff;
+          margin-left: 8px;
+        }
+
+
+      }
+    }
+  }
+  
+  
+
+}

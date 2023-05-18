@@ -1,0 +1,107 @@
+@import '../../common.scss';
+
+.form-center {
+    padding: px(30);
+    box-sizing: border-box;
+    > div {
+        border-radius: px(20);
+    }
+
+    .preview-form {
+        padding: px(33);
+        .form-item-sex {
+            height: px(100);
+            background: #d8d8d833;
+            border-radius: px(10);
+            display: flex;
+            align-items: center;
+            font-size: px(30);
+            overflow: hidden;
+            margin-bottom: px(20);
+
+            .sex-item {
+                width: 50%;
+                height: px(100);
+                line-height: px(100);
+                text-align: center;
+                color: #777777;
+            }
+            .sex-item_active {
+                background: #dbe8f9;
+                color: #4677d5;
+            }
+        }
+
+        .form-item {
+            height: px(100);
+            background: #d8d8d833;
+            border-radius: px(10);
+            display: flex;
+            align-items: center;
+            padding: 0 px(30);
+            position: relative;
+            font-size: px(30);
+            margin-bottom: px(20);
+
+            .right-fix {
+                position: absolute;
+                z-index: 2;
+                right: px(30);
+                margin: 0;
+                font-style: normal;
+                cursor: pointer;
+
+                img {
+                    width: px(30);
+                }
+            }
+
+            color: #cccccc;
+
+            > span {
+                margin-right: px(15);
+            }
+        }
+        .required {
+            &::before {
+                content: '*';
+                color: red;
+                position: absolute;
+                left: px(16);
+            }
+        }
+
+        > div.confirm-agreement {
+            color: #c5c5c5;
+            font-size: px(20);
+            border: none;
+            height: px(30);
+            display: flex;
+            align-items: center;
+            i {
+                display: inline-block;
+                width: px(22);
+                height: px(22);
+                border-radius: 50%;
+                border: solid px(1) #c5c5c5;
+                margin-right: px(10);
+            }
+            span {
+                color: #3579db;
+                margin: 0;
+            }
+        }
+    }
+
+    .submit {
+        display: flex;
+        justify-content: center;
+        padding: 0 px(33) px(45) px(33);
+        button {
+            width: 100%;
+            font-size: px(30);
+            border-radius: px(44);
+            height: px(88);
+        }
+    }
+}
