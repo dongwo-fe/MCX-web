@@ -31,11 +31,6 @@ export default function CreateFetch(prePath?: string, type?: number) {
         let platform = getSessionStorage(longStorageKeys.PLATFORM);
         const env = process.env.SERVE_ENV;
         if (isLocal) {
-            // if (type === 1) {
-            //     authorization ='Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3ODc5MTI3MzE3NzMxNTMyODAiLCJpYXQiOjE2ODA2MDA0ODgsImV4cCI6MTY4MDY0MzY4OH0.46cY1tbxRi5shfD5lUaSS7e363QJDmEQs3lGjppI9bHxtKzbjqMPHKlJ0VlKCCp0OYJbVLykWjugVrnP4jbEog'
-            // } else {
-            //     authorization ='Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3ODYzOTY2NTc1NzU1NzE0NTYiLCJpYXQiOjE2ODA1Nzg2NjAsImV4cCI6MTY4MDYyMTg2MH0.3utadzOHL_bn_I-iriVefXrBX4W8MGzQFhdFnfOzHbmJBlFOEBH7KaKk4iEbqwquDMEiti8Bmf8xrIJIS-Imgg'
-            // }
             authorization = new URLSearchParams(location.search).get("token");
             platform = 'operation';
         }

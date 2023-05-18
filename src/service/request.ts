@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import baseURL from '@/utils/baseUrl';
-const token = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2NTYzNzk5Njc1MDAyNTUyMzIiLCJpYXQiOjE2NDc4NTIwMzcsImV4cCI6MTY0Nzg5NTIzN30.oXRuPWMRgWlY8t9536wzMtBGpPiFL_PAOWEDgFFJeqfJEAM0xvNdsNFy8UGhKtwyyis7SugM4Fev96PADm-KWQ'
+const token = ''
 
 const http = axios.create({
     baseURL,
